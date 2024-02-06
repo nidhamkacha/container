@@ -87,6 +87,10 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             child: Center(child: Text("Nidham")),
           ),
+          // FloatingActionButton(
+          //   onPressed: () {},
+          //   child: Text("Login"),
+          // )
         ],
       ),
     );
