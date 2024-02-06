@@ -24,6 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 200,
             width: 200,
+            margin: EdgeInsets.only(left: 100),
             decoration: BoxDecoration(
               color: Colors.cyan,
               border: Border.all(),
@@ -44,6 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 200,
             width: 200,
+            margin: EdgeInsets.only(left: 100),
             decoration: BoxDecoration(
               color: Colors.cyan,
               border: Border.all(),
@@ -64,6 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 200,
             width: 200,
+            margin: EdgeInsets.only(left: 100),
             decoration: BoxDecoration(
               color: Colors.cyan,
               border: Border.all(),
@@ -77,7 +80,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               ],
               shape: BoxShape.circle,
-              gradient: LinearGradient(colors: [Colors.red, Colors.yellow]),
+              gradient: LinearGradient(
+                  colors: [Colors.deepPurpleAccent, Colors.yellow],
+                  begin: Alignment.centerLeft),
             ),
             child: Center(child: Text("Nidham")),
           ),
