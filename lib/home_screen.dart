@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -24,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 200,
             width: 200,
-            margin: EdgeInsets.only(left: 100),
+            margin: EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: Colors.cyan,
               border: Border.all(),
@@ -45,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 200,
             width: 200,
-            margin: EdgeInsets.only(left: 100),
+            margin: EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: Colors.cyan,
               border: Border.all(),
@@ -66,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 200,
             width: 200,
-            margin: EdgeInsets.only(left: 100),
+            margin: EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: Colors.cyan,
               border: Border.all(),
