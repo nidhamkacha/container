@@ -55,7 +55,13 @@ class _TextScreenState extends State<TextScreen> {
                         child: Text(
                             "You Can Request Another Tour Anytime.If You Have Question Please Contact Your Agent."),
                       ),
-                      Container(),
+                      Container(
+                        height: 200,
+                        width: 340,
+                        decoration: BoxDecoration(
+                            color: Colors.amber,
+                            borderRadius: BorderRadius.circular(20)),
+                      ),
                     ],
                   ),
                 ),
