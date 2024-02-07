@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -87,6 +86,10 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             child: Center(child: Text("Nidham")),
           ),
+          // FloatingActionButton(
+          //   onPressed: () {},
+          //   child: Text("Login"),
+          // )
         ],
       ),
     );
