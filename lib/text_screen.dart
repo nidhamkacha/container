@@ -62,6 +62,32 @@ class _TextScreenState extends State<TextScreen> {
                             color: Colors.amber,
                             borderRadius: BorderRadius.circular(20)),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text(
+                              "Goldem Meadows",
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.w600),
+                            ),
+                            Text("Price")
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text(
+                              "Goldem Meadows",
+                            ),
+                            Text("Price")
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
