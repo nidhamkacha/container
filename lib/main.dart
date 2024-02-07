@@ -1,4 +1,5 @@
 import 'package:containerwidget/home_screen.dart';
+import 'package:containerwidget/text_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,6 +24,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         title: 'Container Widget',
         debugShowCheckedModeBanner: false,
-        home: HomeScreen());
+        // home: HomeScreen());
+        home: TextScreen());
   }
 }
