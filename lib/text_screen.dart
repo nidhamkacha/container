@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TextScreen extends StatefulWidget {
   const TextScreen({super.key});
@@ -15,7 +16,8 @@ class _TextScreenState extends State<TextScreen> {
       child: Scaffold(
         //AppBar
         appBar: AppBar(
-          title: Text("Text Widget"),
+          // title: Text("Text Widget"),
+          leading: Icon(Icons.arrow_back_ios_new_rounded),
           backgroundColor: Colors.blueAccent,
         ),
         // Body
@@ -26,8 +28,16 @@ class _TextScreenState extends State<TextScreen> {
                 alignment: Alignment.center,
                 child: Text(
                   "Past Tours",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                  style: GoogleFonts.alegreyaSc(
+                    fontSize: 20,
+                  ),
                 ),
+              ),
+              Column(
+                children: [
+                  Icon(Icons.hotel_outlined),
+                  Text("Your Hotel Rooms")
+                ],
               ),
               Column(
                 children: [
@@ -43,8 +53,8 @@ class _TextScreenState extends State<TextScreen> {
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text(
-                            "🗓️ Mon,Apr 4, 🕝 10 AM to 11:45 AM",
-                            style: TextStyle(fontWeight: FontWeight.w500),
+                            "Mon,Apr 4, 🕝 10 AM to 11:45 AM",
+                            style: GoogleFonts.aDLaMDisplay(),
                           ),
                         ),
                         Text(
@@ -54,13 +64,20 @@ class _TextScreenState extends State<TextScreen> {
                         Padding(
                           padding: const EdgeInsets.all(10.0),
                           child: Text(
-                              "You Can Request Another Tour Anytime.If You Have Question Please Contact Your Agent."),
+                            "You Can Request Another Tour Anytime.If You Have Question Please Contact Your Agent.",
+                            style: TextStyle(
+                                fontFamily: 'Raleway-VariableFont',
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
                         Container(
                           height: 200,
                           width: 340,
                           decoration: BoxDecoration(
-                              color: Colors.amber,
+                              image: DecorationImage(
+                                image: AssetImage("assets\images\room.jpg"),
+                                fit: BoxFit.fill,
+                              ),
                               borderRadius: BorderRadius.circular(20)),
                         ),
                         Padding(
