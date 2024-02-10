@@ -18,6 +18,10 @@ class _TextScreenState extends State<TextScreen> {
         appBar: AppBar(
           // title: Text("Text Widget"),
           leading: Icon(Icons.arrow_back_ios_new_sharp),
+          title: Text(
+            "Past Tours",
+            style: GoogleFonts.voces(),
+          ),
           backgroundColor: Colors.blueAccent,
         ),
         // Body
