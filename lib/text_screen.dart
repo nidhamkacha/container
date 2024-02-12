@@ -19,22 +19,23 @@ class _TextScreenState extends State<TextScreen> {
             DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blue,
-              ),
+              ), //BoxDecoration
               child: UserAccountsDrawerHeader(
+                decoration: BoxDecoration(color: Colors.blue),
                 accountName: Text(
                   "Nidham Kacha",
-                  style: GoogleFonts.prompt(),
+                  style: TextStyle(fontSize: 18),
                 ),
                 accountEmail: Text("nidham78@gmail.com"),
+                currentAccountPictureSize: Size.square(50),
                 currentAccountPicture: CircleAvatar(
-                  backgroundColor: Colors.blue,
-                  child: Image.network(
-                    "https://w7.pngwing.com/pngs/962/948/png-transparent-bitstrips-avatar-sticker-snap-inc-cheering-grads-mammal-heroes-hand.png",
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                currentAccountPictureSize: Size.fromRadius(50),
-              ),
+                  backgroundColor: Color.fromARGB(255, 165, 255, 137),
+                  child: Text(
+                    "N",
+                    style: TextStyle(fontSize: 30.0, color: Colors.blue),
+                  ), //Text
+                ), //circleAvatar
+              ), //UserAccountDrawerHeader
             ),
             ListTile(
               autofocus: true,
@@ -117,14 +118,17 @@ class _TextScreenState extends State<TextScreen> {
         // leading: Icon(Icons.arrow_back_ios_new_sharp),
         title: Text(
           "Past Tours",
-          style: GoogleFonts.voces(),
+          style: GoogleFonts.abrilFatface(
+            color: Colors.white,
+          ),
         ),
         centerTitle: true,
-        // actions: [
-        //   Icon(
-        //     Icons.dehaze_outlined,
-        //   ),
-        // ],
+        actions: [
+          Icon(
+            Icons.mode_night_rounded,
+            color: Colors.white,
+          ),
+        ],
         backgroundColor: Colors.blueAccent,
       ),
       // Body
@@ -238,14 +242,6 @@ class _TextScreenState extends State<TextScreen> {
                           ],
                         ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Icon(Icons.payment_rounded),
-                          Icon(Icons.car_crash_outlined),
-                          Icon(Icons.accessibility_new),
-                        ],
-                      )
                     ],
                   ),
                 ),
