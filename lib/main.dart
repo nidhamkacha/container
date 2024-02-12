@@ -27,8 +27,9 @@ class _MyAppState extends State<MyApp> {
         title: 'Container Widget',
         debugShowCheckedModeBanner: false,
         // home: HomeScreen());
-        //  home: TextScreen()
+        home: TextScreen()
         // home: DrawerScreen()
-        home: demodrawer());
+        // home: demodrawer()
+        );
   }
 }
