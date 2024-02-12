@@ -1,3 +1,4 @@
+import 'package:containerwidget/demo_screen_drawer.dart';
 import 'package:containerwidget/drawer_screen.dart';
 import 'package:containerwidget/home_screen.dart';
 import 'package:containerwidget/text_screen.dart';
@@ -27,6 +28,7 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         // home: HomeScreen());
         //  home: TextScreen()
-        home: DrawerScreen());
+        // home: DrawerScreen()
+        home: demodrawer());
   }
 }
