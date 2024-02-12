@@ -22,7 +22,9 @@ class _TextScreenState extends State<TextScreen> {
         ),
         centerTitle: true,
         actions: [
-          Icon(Icons.dehaze_outlined),
+          Icon(
+            Icons.dehaze_outlined,
+          ),
         ],
         backgroundColor: Colors.blueAccent,
       ),

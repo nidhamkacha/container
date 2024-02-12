@@ -1,3 +1,4 @@
+import 'package:containerwidget/drawer_screen.dart';
 import 'package:containerwidget/home_screen.dart';
 import 'package:containerwidget/text_screen.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,7 @@ class _MyAppState extends State<MyApp> {
         title: 'Container Widget',
         debugShowCheckedModeBanner: false,
         // home: HomeScreen());
-        home: TextScreen());
+        //  home: TextScreen()
+        home: DrawerScreen());
   }
 }
