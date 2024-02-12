@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class demodrawer extends StatefulWidget {
   const demodrawer({super.key});
@@ -20,7 +21,10 @@ class _demodrawerState extends State<demodrawer> {
                 color: Colors.blue,
               ),
               child: UserAccountsDrawerHeader(
-                accountName: Text("Nidham Kacha"),
+                accountName: Text(
+                  "Nidham Kacha",
+                  style: GoogleFonts.prompt(),
+                ),
                 accountEmail: Text("nidham78@gmail.com"),
                 currentAccountPicture: CircleAvatar(
                   backgroundColor: Colors.blue,
